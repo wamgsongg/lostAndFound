@@ -17,32 +17,20 @@ import lombok.EqualsAndHashCode;
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
-public class Person implements Serializable {
+public class Comment implements Serializable {
 
     @TableId(type = IdType.AUTO)
     private Long id;
 
-    private String name;
+    private String commentInfo;
 
-    private String email;
+    private Boolean delete;
 
-    private String tel;
+    private Long commentator;
 
-    private String password;
+    private Long postId;
 
-    private String school;
-
-    private String sex;
-
-    private Double height;
-
-    private Double weight;
-
-    private String address;
-
-    private String hometown;
-
-    private String icon;
+    private Integer commentId;
 
 
 }
